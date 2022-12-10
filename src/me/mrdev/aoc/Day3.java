@@ -8,10 +8,10 @@ import java.util.Arrays;
 public class Day3 {
 
     public static void main(String[] args) throws IOException {
-        /* each string contains 2 substrings (division by half)
-        * item type is the common letter between those 2 substrings
-        * the priority of the type(common letter) is its count in the alphabet 1-26(lower) 26-52(upper)
-        * goal: get the sum of all the priorities of each string
+        /*
+        *
+        * PART 1 OF DAY 3
+        *
         */
         BufferedReader reader = new BufferedReader(new FileReader("day3.txt"));
         String line = reader.readLine();
