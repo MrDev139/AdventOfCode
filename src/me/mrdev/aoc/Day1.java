@@ -26,5 +26,23 @@ public class Day1 {
         int top3 = list.get(list.size() - 1) + list.get(list.size() - 2) + list.get(list.size() - 3);
         System.out.println("top three values combined " + top3);
     }
+    /* original code for part 1 of day 1
+        BufferedReader reader = new BufferedReader(new FileReader("day1.txt"));
+        String line = reader.readLine();
+        int biggest = 0;
+        int current = 0;
+        while(line != null) { //read all file lines
+            if(line.isEmpty()){ //if space detected
+                line = reader.readLine();
+                if(current > biggest) { //if current is biggest than the biggest value
+                    biggest = current; //out new biggest value
+                }
+                current = 0; //we reset the value
+                continue;
+            }
+            current += Integer.parseInt(line); //keep adding the numbers from the lines until we reach a space
+            line = reader.readLine();
+        }
+        System.out.println("the biggest value is " + biggest);*/
 
 }
